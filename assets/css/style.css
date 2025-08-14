@@ -1,0 +1,17 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+
+}
+.head{
+    padding: 20px;
+    text-align: center;
+    color:aliceblue;
+    background-color: crimson;
+
+}
+#three{
+    color: aliceblue;
+    background-color: palevioletred;
+}
