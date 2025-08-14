@@ -9,9 +9,22 @@
     text-align: center;
     color:aliceblue;
     background-color: crimson;
+   border-radius:10px;
+   
 
 }
 #three{
     color: aliceblue;
     background-color: palevioletred;
 }
+.hii{
+   padding: 40px;
+   margin: 20px;
+   text-align: center;
+   background-color:black;
+   color:white;
+   border-radius:10px;
+   border-color:grey;
+   border-style:solid;
+}
+   
