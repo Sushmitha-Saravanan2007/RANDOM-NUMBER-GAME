@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="game.webp">
+</head>
+<body>
+    <div class="head">
+        <h1 class="one" style="padding: 10px;display: inline-block; ">
+            NUMBER GAME 🎮
+        </h1><br>
+        <h3 id="to" style="padding: 10px; display: inline-block;">
+            GUESS THE NUMBER
+        </h3>
+    </div>
+    <div id="three" style="padding: 40px;
+    margin: 20px;
+    text-align: center;">
+        <center>
+            <input type="number" placeholder="enter a number(1-10)" id="two" style="display: inline-block;">
+            <button id="four" onclick="check()" style="display: inline-block;">check</button><br>
+            <h3  id="five"style= "display:inline-block;">you are RIGHT/WRONG</h3><br>
+            <h4 style="display: inline-block;">SCORE=</h4>
+            <h4 id="six" style="display: inline-block;">5</h4>
+        </center>
+    </div>
+    <script>
+        var a=document.getElementById("two")
+        var b=document.getElementById("five")
+        var d=document.getElementById("six")
+        var c=Math.floor(Math.random()*10)+1
+        var s=5
+        function check()
+        {
+            var x=a.value
+            if(x==c)
+            {
+                b.textContent="RIGHT"
+                alert('YOU WON...🏆')
+                
+            }
+            else{
+                b.textContent="WRONG"
+                s=s-1
+                d.textContent=s
+                if(s<=0){
+                    a.disabled=true
+                    alert("Game Over ❌")
+                }
+                
+
+                
+            }
+    
+        
+
+        }
+
+
+    </script>
+
+    
+
+
+
+    
+</body>
+</html>
